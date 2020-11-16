@@ -7,9 +7,9 @@ inp.on("close", () => {
     //start-hereconsole.log(userInput);//end-here})
 var A=userInput[0];
 var f=((9/5)*A)+32;
+var fa=f.toFixed(2);
 
 
-
-console.log(f);
+console.log(fa);
     
 })
