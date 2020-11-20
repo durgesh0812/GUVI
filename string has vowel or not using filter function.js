@@ -18,6 +18,7 @@ inp.on("close", () => {
     let d=c.split("")
     console.log(d);
     let check=d.filter(item=>item=="a"||item=="e"||item=="i"||item=="o"||item=="u")
+    console.log("yes);
     
     
     
