@@ -1,0 +1,24 @@
+const readline = require('readline');
+const inp = readline.createInterface({input: process.stdin});
+const userInput = [];inp.on("line", (data) => {userInput.push(data);
+    
+});
+inp.on("close", () => {
+    function avg(n)
+    {var sum=0;
+   
+for( var i = 0; i < n.length; i++ ){
+    sum += parseInt(n[i]); //don't forget to add the base
+}
+
+var avg1 = sum/n.length;
+
+return avg1;}
+
+     let n=userInput[0].split(" ");
+     console.log(n);
+     var a=avg(n);let
+
+    console.log(a);
+
+})
