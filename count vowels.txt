@@ -1,0 +1,23 @@
+const readline = require('readline');
+const inp = readline.createInterface({input: process.stdin});
+const userInput = [];inp.on("line", (data) => {userInput.push(data);
+    
+});
+inp.on("close", () => {
+  function countVowel(n) { 
+
+    // find the count of vowels
+    const count = n.match(/[aeiou]/gi).length;
+
+    // return number of vowels
+    return count;
+}
+
+// take input
+
+let n=userInput[0].split("").join(" ")
+const result = countVowel(n);
+
+console.log(result);
+
+})

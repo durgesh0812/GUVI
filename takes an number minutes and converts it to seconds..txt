@@ -1,0 +1,17 @@
+const readline = require('readline');
+const inp = readline.createInterface({input: process.stdin});
+const userInput = [];inp.on("line", (data) => {userInput.push(data);
+  
+});inp.on("close", () => {
+var min=5;
+//var c=parseInt(num);
+
+function getopposite(min) { 
+    
+min*=60
+return min;
+}
+var result= getopposite(min);
+console.log(result);
+    
+})

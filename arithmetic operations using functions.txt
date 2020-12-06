@@ -1,0 +1,26 @@
+const readline = require('readline');
+const inp = readline.createInterface({input: process.stdin});
+const userInput = [];inp.on("line", (data) => {userInput.push(data);
+    
+});
+inp.on("close", () => {
+  function calculator(a,b) { 
+var c=a+b;
+var d=a-b;
+var e=a*b;
+var f=a/b;
+console.log(c);
+console.log(d);
+console.log(e);
+console.log(f);
+      
+  }
+
+// take input
+
+let n=userInput[0].split(" ")
+
+const result = calculator(parseInt(n[0]),parseInt(n[1]));
+
+
+})
